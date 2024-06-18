@@ -23,5 +23,8 @@ jobs:
       - name: Code Checkout
         uses: actions/checkout@v2
 
+      - name: Install Dependencies
+        run: pnpm install
+
       - name: Check Quality
         run: pnpm quality
