@@ -2,7 +2,7 @@
   "name": "rust2ts",
   "author": "Nicolas Assouad",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Run Typescript code faster with Rust and WebAssembly",
   "type": "module",
   "bin": "dist/index.js",
