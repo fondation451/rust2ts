@@ -1,6 +1,8 @@
-# Compiled files in examples
+# Compiled files
 examples/*.js
 examples/*.d.ts
+Cargo.toml
+Cargo.lock
 
 # Logs
 logs

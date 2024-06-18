@@ -27,13 +27,13 @@
   ],
   "scripts": {
     "build": "pnpm install && pnpm compile",
-    "check": "tsc --noEmit",
     "compile": "tsc && pnpm rollup && rimraf -rf ./dist && mkdir dist && mv index.js dist/index.js && chmod +x dist/index.js",
     "clean": "rimraf -rf ./node_modules",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
     "prepublish": "pnpm build && pnpm quality",
-    "quality": "pnpm check && pnpm lint",
-    "rollup": "rollup --config rollup.config.js"
+    "quality": "pnpm lint && pnpm build && pnpm test",
+    "rollup": "rollup --config rollup.config.js",
+    "test": "node dist/index.js"
   },
   "dependencies": {
     "wasm-pack": "^0.12.1"

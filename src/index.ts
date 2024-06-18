@@ -11,8 +11,6 @@ const main = () => {
 
     compileRustToTs(file);
   }
-
-  console.log(files);
 };
 
 main();

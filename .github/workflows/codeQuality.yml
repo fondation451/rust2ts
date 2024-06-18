@@ -1,0 +1,27 @@
+name: Code Quality
+
+on: push
+
+env:
+  NODE_VERSION: 18
+
+jobs:
+  codeQuality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Code Checkout
+        uses: actions/checkout@v2
+
+      - name: Check Quality
+        run: pnpm quality
