@@ -1,5 +1,5 @@
 {
-  "name": "rustts",
+  "name": "rust2ts",
   "author": "Nicolas Assouad",
   "license": "MIT",
   "version": "1.0.0",
@@ -11,12 +11,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fondation451/rustts.git"
+    "url": "git+https://github.com/fondation451/rust2ts.git"
   },
   "bugs": {
-    "url": "https://github.com/fondation451/rustts/issues"
+    "url": "https://github.com/fondation451/rust2ts/issues"
   },
-  "homepage": "https://github.com/fondation451/rustts#README",
+  "homepage": "https://github.com/fondation451/rust2ts#README",
   "keywords": [
     "rust",
     "ts",

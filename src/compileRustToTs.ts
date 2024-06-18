@@ -9,9 +9,9 @@ const generateCargoFile = (file: string): void => {
     CARGO_FILE_PATH,
     `
 [package]
-name = "rustts-${Math.floor(Math.random() * 10000000)}"
+name = "rust2ts-${Math.floor(Math.random() * 10000000)}"
 version = "1.0.0"
-authors = ["rustts compiler"]
+authors = ["rust2ts compiler"]
 edition = "2018"
 
 [lib]
